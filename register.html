@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barangay Binanuahan | Resident Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brgy-seal">
+      <img src="images/logo.jpg" alt="Barangay Binanuahan Official Seal">
+    </div>
+    <div class="header-text">
+      <h1>Barangay Binanuahan</h1>
+      <p>Municipality of Lagonoy, Camarines Sur, Bicol Region, Philippines</p>
+    </div>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="register.html" class="active">Register</a>
+</nav>
+
+<main>
+  <h2 class="page-title">Resident Registration Form</h2>
+  <p class="lead">
+    Sample registration form for barangay residents. Fill in your details below and press
+    Submit &mdash; you'll be taken to a confirmation page.
+  </p>
+
+  <!-- Pure HTML form: submitting navigates the browser to thankyou.html -->
+  <form class="reg-form" action="thankyou.html" method="get">
+
+    <div class="form-group">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Juan Dela Cruz" required>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter a password" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Complete Address</label>
+      <input type="text" id="address" name="address" placeholder="Purok / Sitio, Binanuahan, Lagonoy, Camarines Sur">
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="birthdate">Date of Birth</label>
+        <input type="date" id="birthdate" name="birthdate">
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact Number</label>
+        <input type="tel" id="contact" name="contact" placeholder="09XX-XXX-XXXX">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
+    </div>
+
+    <div class="form-group">
+      <label for="civilstatus">Civil Status</label>
+      <select id="civilstatus" name="civilstatus">
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        <option value="widowed">Widowed</option>
+        <option value="separated">Separated</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="remarks">Other Details / Remarks</label>
+      <textarea id="remarks" name="remarks" rows="4" placeholder="Anything else you'd like to add"></textarea>
+    </div>
+
+    <button type="submit" class="btn-submit">Submit</button>
+  </form>
+</main>
+
+<footer>
+  &copy; 2026 Barangay Binanuahan, Lagonoy, Camarines Sur &mdash; Student Project by Marvin Millares Partos
+</footer>
+
+</body>
+</html>
